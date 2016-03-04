@@ -1,0 +1,131 @@
+.header {
+  width: 100%;
+  background: #000;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.header-menu {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+}
+
+.header-menu-navbar {
+  position: relative;
+  text-align: center;
+
+  .header-links {
+    float: right;
+    margin-top: 31px;
+
+    a {
+      text-decoration: none;
+      margin: 0 1em;
+    }
+
+    a:link, a:visited {
+      color: #fff;
+    }
+
+    a:hover, a.active {
+      color: #C7C7C7;
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  .header-menu-navbar .header-links {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .header-menu-navbar .header-links {
+    margin-top: 22px;
+    float: none;
+  }
+}
+
+.header-image {
+  width: 100%;
+  position: relative;
+
+  .greeting {
+    position: absolute;
+    top: 21.5%;
+    left: 21.5%;
+    width: 57%;
+    height: 57%;
+    background-color: #fff;
+    text-align: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 8px;
+      left: 0;
+      bottom: -8px;
+      background-color: #fff;
+      opacity: 0.3;
+    }
+
+    h1 {
+      font-size: 2em;
+      width: 80%;
+      font-weight: 800;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 1.28em;
+      line-height: 1.57em;
+      font-weight: 300;
+      color: #333333;
+      display: inline-block;
+      border-bottom: 4px solid #f7505a;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      margin: 2em 0;
+    }
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .header-image .greeting h1 {
+    font-size: 1.7em;
+  }
+  .header-image .greeting h2 {
+    font-size: 1.15em;
+    margin: 1.8em;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .header-image .greeting h1 {
+    font-size: 1.5em;
+  }
+  .header-image .greeting h2 {
+    font-size: 1em;
+    margin: 1.5em;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .greeting {
+    display: none;
+  }
+}

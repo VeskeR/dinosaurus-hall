@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 4em;
+  background: #4A4A4A;
+  min-height: 50px;
+
+  .sign {
+    position: relative;
+
+    p {
+      position: absolute;
+      top: 1em;
+      left: 5%;
+      color: #fff;
+      font-size: 0.9em;
+    }
+  }
+}

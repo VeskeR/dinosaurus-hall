@@ -1,0 +1,37 @@
+@import "main.scss";
+@import "header.scss";
+@import "footer.scss";
+
+.dinosaurs-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 0;
+  }
+}
+
+.dino-img-container, .dino-content {
+  margin: 1em 0;
+}
+
+.dino-img-container {
+  width: 100%;
+  max-height: 300px;
+
+  img {
+    max-height: 300px;
+  }
+}
+
+.dino-content {
+  h4 {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    line-height: 2em;
+    font-size: 1.1em;
+  }
+}
